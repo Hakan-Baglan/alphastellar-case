@@ -8,6 +8,8 @@ nav {
 main {
     background-color: #84ffff;
     width: 80%;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .sidebar {
@@ -42,6 +44,7 @@ main .one {
     display: flex;
     justify-content: center;
     height: 80%;
+    margin: 77px;
 }
 
 main .two {
@@ -86,11 +89,3 @@ button {
         border: none;
     }
 }
-
-/* @media all and (min-width: 800px) {
-    main{
-        flex: 3;
-        
-    }
-   
-} */

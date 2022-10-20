@@ -27,13 +27,38 @@
   color: white;
 }
 
+input {
+  width: 100%;
+  margin-top: 48px;
+  padding: 40px;
+  font-size: 20px;
+}
+
+button {
+  margin-top: 26px;
+  padding: 10px;
+  width: 20%;
+}
+
+.button-two {
+  margin-left: 20px !important;
+}
+
 @media only screen and (max-width: 550px) {
   .form-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-      "controls"
-    ;
+      "controls";
+  }
+
+  input {
+    padding: 0px;
+  }
+
+  button{
+    padding: 1px;
+    width: 75px;
   }
 
   .items {

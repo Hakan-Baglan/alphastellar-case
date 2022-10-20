@@ -12,16 +12,21 @@
     font-size: 32px;
     color: #004d40;
     text-align: center;
+    overflow: hidden;
 }
 
 nav {
     background-color: #a7ffeb;
     grid-area: nav;
+    height: 6vh;
 }
 
 main {
     background-color: #84ffff;
     grid-area: main;
+    height: 88vh;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .sidebar {
@@ -29,12 +34,34 @@ main {
     grid-area: sidebar;
 }
 
-
-
 footer {
     background-color: #1de9b6;
     grid-area: footer;
+    height: 6vh;
+}
 
+.three {
+    display: grid;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.four {
+    display: grid;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.one {
+    border: 1px dashed black;
+    margin: 77px;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
 }
 
 @media only screen and (max-width: 550px) {
@@ -46,7 +73,35 @@ footer {
             "footer";
     }
 
+    .two {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .three {
+        display: none;
+    }
+
     .sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    container {
+        grid-template-rows: 0.1fr 2fr 0.1fr;
+        grid-template-areas:
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .two {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .three {
         display: none;
     }
 }

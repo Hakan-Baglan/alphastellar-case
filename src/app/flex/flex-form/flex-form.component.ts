@@ -28,4 +28,8 @@ export class FlexFormComponent implements OnInit {
     console.log('form :',this.form.value);
     this.router.navigate(['grid']);
   }
+
+  formReset() {
+    this.form.reset();
+  }
 }
