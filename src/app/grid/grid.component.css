@@ -19,6 +19,8 @@ nav {
     background-color: #a7ffeb;
     grid-area: nav;
     height: 6vh;
+    display: grid;
+    align-content: center;
 }
 
 main {
@@ -40,6 +42,8 @@ footer {
     background-color: #1de9b6;
     grid-area: footer;
     height: 6vh;
+    display: grid;
+    align-content: center;
 }
 
 .three {
@@ -55,7 +59,8 @@ footer {
     font-size: 30px;
     text-align: center;
 }
-.one{
+
+.one {
     display: grid;
     justify-content: center;
 }
@@ -74,6 +79,8 @@ footer {
             "nav"
             "main"
             "footer";
+        font-size: 20px;
+        font-weight: bolder;
     }
 
     .two {
@@ -113,8 +120,8 @@ footer {
         display: none;
     }
 
-    .one{
+    .one {
         border: none;
     }
-    
+
 }

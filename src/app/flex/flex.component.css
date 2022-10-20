@@ -1,7 +1,9 @@
 nav {
     background-color: #a7ffeb;
     height: 6vh;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 32px;
 }
 
@@ -23,7 +25,9 @@ main {
 footer {
     background-color: #1de9b6;
     height: 6vh;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 32px;
 }
 
@@ -78,18 +82,18 @@ button {
         width: 100%;
     }
 
-    .three{
+    .three {
         display: none;
     }
 
-    main .two{
+    main .two {
         display: flex;
         width: 100%;
         justify-content: center !important;
         border: none;
     }
 
-    .one{
+    .one {
         margin: 0px !important;
         margin-top: 60px !important;
         display: flex;
