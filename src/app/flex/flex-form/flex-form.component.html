@@ -5,7 +5,7 @@
     <input type="text" placeholder="Text Form Field 3" formControlName="feildThree">
     <input type="text" placeholder="Text Form Field 4" formControlName="feildFour">
     <div class="controls">
-        <button type="button" [disabled]="form.invalid" (click)="formReset()">Reset Button</button>
+        <button type="button" [disabled]="form.untouched ||!form.dirty" (click)="formReset()">Reset Button</button>
         <button type="button" [disabled]="form.invalid" class="button-two" (click)="send()">Submit Button</button>
     </div>
 </form>

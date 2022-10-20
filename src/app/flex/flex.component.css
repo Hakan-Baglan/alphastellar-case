@@ -6,6 +6,8 @@ nav {
 }
 
 main {
+    display: flex;
+    align-items: center;
     background-color: #84ffff;
     width: 80%;
     max-height: 90vh;
@@ -43,7 +45,6 @@ footer {
 main .one {
     display: flex;
     justify-content: center;
-    margin: 77px;
 }
 
 main .two {

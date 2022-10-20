@@ -4,7 +4,6 @@
   grid-template-areas:
     "items controls";
   grid-auto-flow: row;
-  border: 2px dashed black;
 
 }
 
