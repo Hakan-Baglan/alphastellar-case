@@ -15,12 +15,12 @@ main {
 
 footer {
     background-color: #1de9b6;
-    height: 10vh;
+    height: 6vh;
 }
 
 .middle-area {
     display: flex;
-    height: 84vh;
+    height: 92vh;
 }
 
 .container {
@@ -45,7 +45,8 @@ main .two {
     display: flex;
     justify-content: space-between;
     border: 1px dashed black;
-    padding-top: 10px;
+    align-items: center;
+    height: 100%;
 }
 
 main .three {
@@ -68,6 +69,16 @@ button {
 
     main {
         width: 100%;
+    }
+
+    .three{
+        display: none;
+    }
+
+    .two{
+        display: flex;
+        width: 100%;
+        justify-content: center !important;
     }
 }
 
