@@ -1,0 +1,42 @@
+nav {
+    background-color: #a7ffeb;
+    height: 60px;
+}
+
+main {
+    background-color: #84ffff;
+    height: 300px;
+    width: 80%;
+}
+
+.sidebar {
+    background-color: #18ffff;
+    width: 20%;
+}
+
+footer {
+    background-color: #1de9b6;
+    height: 60px;;
+}
+
+.middle-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.container > * {
+    flex: 1 100%;
+}
+
+@media all and (min-width: 800px) {
+    main{
+        flex: 3;
+    }
+   
+}
