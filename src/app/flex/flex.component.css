@@ -43,7 +43,6 @@ footer {
 main .one {
     display: flex;
     justify-content: center;
-    height: 80%;
     margin: 77px;
 }
 
@@ -87,5 +86,12 @@ button {
         width: 100%;
         justify-content: center !important;
         border: none;
+    }
+
+    .one{
+        margin: 0px !important;
+        margin-top: 60px !important;
+        display: flex;
+        align-items: center;
     }
 }

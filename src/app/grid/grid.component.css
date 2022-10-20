@@ -1,7 +1,7 @@
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 0.2fr;
     grid-template-rows: 0.2fr 2fr 0.2fr;
     grid-template-areas:
         "nav nav"
@@ -67,6 +67,7 @@ footer {
 @media only screen and (max-width: 550px) {
     .container {
         grid-template-rows: 0.1fr 2fr 0.1fr;
+        grid-template-columns: auto;
         grid-template-areas:
             "nav"
             "main"
@@ -85,10 +86,14 @@ footer {
     .sidebar {
         display: none;
     }
+
+    .one {
+        border: none;
+    }
 }
 
 @media only screen and (max-width: 750px) {
-    container {
+    .container {
         grid-template-rows: 0.1fr 2fr 0.1fr;
         grid-template-areas:
             "nav"
