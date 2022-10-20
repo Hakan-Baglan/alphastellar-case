@@ -13,14 +13,14 @@ const routes: Routes = [
     loadChildren: () => import('./grid/grid.module').then(m => m.GridModule)
   },
   {
-    path: '**',
-    component: NotFoundComponent
-  },
-  {
     path: '',
     redirectTo: 'flex',
     pathMatch: 'full'
-  }
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
+  },
 
 ];
 
