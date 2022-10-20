@@ -1,11 +1,10 @@
 nav {
     background-color: #a7ffeb;
-    height: 60px;
+    height: 6vh;
 }
 
 main {
     background-color: #84ffff;
-    height: 300px;
     width: 80%;
 }
 
@@ -16,27 +15,66 @@ main {
 
 footer {
     background-color: #1de9b6;
-    height: 60px;;
+    height: 10vh;
 }
 
 .middle-area {
     display: flex;
-    justify-content: space-between;
+    height: 84vh;
 }
 
 .container {
     display: flex;
     flex-flow: row wrap;
-    text-align: center;
+    height: 100vh;
 }
 
-.container > * {
+.container>* {
     flex: 1 100%;
 }
 
-@media all and (min-width: 800px) {
+main .one {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+}
+
+main .two {
+    padding: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px dashed black;
+    padding-top: 10px;
+}
+
+main .three {
+    width: 30%;
+}
+
+main .four {
+    width: 60%;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 550px) {
+    .sidebar {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+/* @media all and (min-width: 800px) {
     main{
         flex: 3;
+        
     }
    
-}
+} */
