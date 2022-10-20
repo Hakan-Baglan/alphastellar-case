@@ -24,6 +24,8 @@
   text-align: center;
   background-color: #ccc;
   color: white;
+  margin-bottom: -36px;
+  padding: 13px;
 }
 
 input {
@@ -34,14 +36,22 @@ input {
 }
 
 button {
+  width: 200px;
   margin-top: 26px;
   padding: 10px;
   width: 20%;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid red;
 }
 
 .button-two {
   margin-left: 20px !important;
 }
+
 
 @media only screen and (max-width: 550px) {
   .form-container {
@@ -55,9 +65,10 @@ button {
     padding: 0px;
   }
 
-  button{
+  button {
     padding: 1px;
     width: 75px;
+    color: white;
   }
 
   .items {

@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-form',
@@ -9,7 +11,10 @@ import { Router } from '@angular/router';
 })
 export class FormComponent implements OnInit {
   form!: UntypedFormGroup;
-  constructor(private fb: FormBuilder,private router: Router) { }
+  color$: Observable<string> = new Observable<string>();
+  constructor(private fb: FormBuilder,private router: Router,private store: Store<{ color: string }>) {
+    this.color$ = this.store.select('color')
+   }
 
   ngOnInit(): void {
     this.initForm();

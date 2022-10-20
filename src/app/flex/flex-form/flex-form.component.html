@@ -1,3 +1,4 @@
+
 <form class="myForm" [formGroup]="form">
     <div class="title">Title</div>
     <input type="text" placeholder="Text Form Field 1" formControlName="fieldOne">
@@ -5,7 +6,7 @@
     <input type="text" placeholder="Text Form Field 3" formControlName="feildThree">
     <input type="text" placeholder="Text Form Field 4" formControlName="feildFour">
     <div class="controls">
-        <button type="button" [disabled]="form.untouched ||!form.dirty" (click)="formReset()">Reset Button</button>
-        <button type="button" [disabled]="form.invalid" class="button-two" (click)="send()">Submit Button</button>
+        <button [ngStyle]="{'background-color':color$ | async}" type="button" [disabled]="form.untouched &&!form.dirty" (click)="formReset()">Reset Button</button>
+        <button [ngStyle]="{'background-color':color$ | async}" type="button" [disabled]="form.invalid" class="button-two" (click)="send()">Submit Button</button>
     </div>
 </form>

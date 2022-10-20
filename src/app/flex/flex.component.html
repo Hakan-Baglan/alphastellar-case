@@ -1,13 +1,14 @@
 <div class="container">
     <div>
-        <nav>Header</nav>
+        <nav [ngStyle]="{'background-color':color$ | async}">Header</nav>
     </div>
-    <div class="middle-area">
+    <div class=" middle-area">
         <main>
             <div class="one">
                 <div class="two">
                     <div class="three">
-                        <button style="padding: 20px;" *ngFor="let item of [].constructor(11)"> MENU ITEM</button>
+                        <button class="items" [ngStyle]="{'background-color':item}"
+                            *ngFor="let item of colors$ |async" (click)="changeColor(item)"> MENU ITEM</button>
                     </div>
                     <div class="four">
                         <app-flex-form></app-flex-form>
@@ -17,7 +18,7 @@
         </main>
         <div class="sidebar">Side bar</div>
     </div>
-        <div>
-            <footer>Footer</footer>
-        </div>
+    <div>
+        <footer [ngStyle]="{'background-color':color$ | async}">Footer</footer>
+    </div>
 </div>
