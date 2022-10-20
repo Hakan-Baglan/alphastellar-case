@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FlexComponent } from './flex.component';
 import { FlexRoutingModule } from './flex-routing.module';
 import { FlexFormComponent } from './flex-form/flex-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -13,7 +14,8 @@ import { FlexFormComponent } from './flex-form/flex-form.component';
   ],
   imports: [
     CommonModule,
-    FlexRoutingModule
+    FlexRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class FlexModule { }

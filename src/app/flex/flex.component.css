@@ -1,6 +1,8 @@
 nav {
     background-color: #a7ffeb;
     height: 6vh;
+    text-align: center;
+    font-size: 32px;
 }
 
 main {
@@ -11,16 +13,19 @@ main {
 .sidebar {
     background-color: #18ffff;
     width: 20%;
+    font-size: 32px;
 }
 
 footer {
     background-color: #1de9b6;
     height: 6vh;
+    text-align: center;
+    font-size: 32px;
 }
 
 .middle-area {
     display: flex;
-    height: 92vh;
+    height: 88vh;
 }
 
 .container {
@@ -59,7 +64,6 @@ main .four {
 
 button {
     width: 100%;
-    margin-top: 20px;
 }
 
 @media only screen and (max-width: 550px) {
@@ -75,10 +79,11 @@ button {
         display: none;
     }
 
-    .two{
+    main .two{
         display: flex;
         width: 100%;
         justify-content: center !important;
+        border: none;
     }
 }
 

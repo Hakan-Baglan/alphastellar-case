@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-flex-form',
@@ -6,10 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flex-form.component.css']
 })
 export class FlexFormComponent implements OnInit {
-
-  constructor() { }
+  form!: UntypedFormGroup;
+  constructor(private fb: FormBuilder,private router: Router) { }
 
   ngOnInit(): void {
+    this.initForm();
   }
 
+  initForm() {
+    this.form = this.fb.group({
+      fieldOne: new UntypedFormControl('',Validators.required),
+      fieldTwo: new UntypedFormControl('',Validators.required),
+      feildThree: new UntypedFormControl('',Validators.required),
+      feildFour: new UntypedFormControl('',Validators.required),
+    });
+  }
+
+  send() {
+    console.log('form :',this.form.value);
+    this.router.navigate(['grid']);
+  }
 }
